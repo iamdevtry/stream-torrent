@@ -127,7 +127,7 @@ router.get('/errors', function (req, res, next) {
 router.get('/delete/:magnet', function (req, res, next) {
     let magnet = req.params.magnet;
 
-    client.remove(magnet, function () {
+    client.remove(magnet, { destroyStore: true }, function () {
         res.status(200);
         res.end();
     });

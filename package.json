@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js -e js,html,css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +17,7 @@
     "hjs": "^0.0.6",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20",
+    "vercel": "^28.6.0",
     "webtorrent": "^1.9.4"
   }
 }
